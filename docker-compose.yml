@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    groovy:
+        image: "groovy:alpine"
+        
+        volumes: 
+            - .:/home/groovy/
+            
+        ports:
+            - "9999:9999"
+            
+        network_mode: "host"    
+            
+        working_dir: /home/groovy
+        
+        
